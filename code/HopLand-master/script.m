@@ -1,7 +1,12 @@
 addpath('src')
-
+%%
+%add more path
+% addpath('IsomapR1')
+% addpath('toolbox_fast_marching')
+% addpath('GPmat')
+% addpath('netlab')
 %% load samples
-dataset='SyntheticData'; %deng2014_1,SyntheticData,guo2010,LPS,HSMM,ES_MEF,yan2013
+dataset='deng2014_1'; %deng2014_1,SyntheticData,guo2010,LPS,HSMM,ES_MEF,yan2013
 hopland=LoadProcessedData(dataset); 
 
 %% load user data

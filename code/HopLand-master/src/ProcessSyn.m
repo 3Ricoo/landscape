@@ -1,5 +1,5 @@
 function [startRefRange,cellStates,selectedGeneNames,filteredExpData,developLine,cellLabels]=ProcessSyn(ifNormaliseData,ifFilterGenes,SelectedGenesIndex)
-    datasetID=input('Enter the set # [1-5]:');
+    datasetID=input('Enter the set # [from 1 to 5]:');
     
     if datasetID==1
         folderName='csvtest_3279';
@@ -15,7 +15,7 @@ function [startRefRange,cellStates,selectedGeneNames,filteredExpData,developLine
         disp('Invalid number');
     end
     
-    targetFile=strcat('./sample_data/syntheticData/',folderName,'.mat');
+    targetFile=strcat('./sample_data/SyntheticData/',folderName,'.mat');
     load(targetFile);
     
     

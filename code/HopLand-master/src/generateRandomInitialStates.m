@@ -5,7 +5,7 @@ function randomXInits=generateRandomInitialStates(num,alpha,hopland)
     % mean mu
     mu=std(orgiFitData(startRefRange,:));
 
-    %
+    %mapping_gene_expression_1
     randomXInits = zeros(num,size(orgiFitData,2));
     for i=1:num
         origNum = randi(length(startRefRange));
